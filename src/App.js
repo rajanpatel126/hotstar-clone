@@ -1,16 +1,17 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from './components/Login';
+import { Navbar } from './components/Navbar';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <div className='container'>
+        <Navbar />
         <Routes>
-          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/' element={<Login/>}></Route>
         </Routes>
-      </div>
+      
       </BrowserRouter>
     </>
   );
